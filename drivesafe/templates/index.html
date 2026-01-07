@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveSafe - Driver Monitoring System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <h1>DriveSafe Monitor</h1>
+        <p>Real-Time Drowsiness Detection System</p>
+    </div>
+
+    <div class="container">
+        <div class="video-box">
+            <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+        </div>
+
+        <div class="status-panel">
+            <h2>Driver Status</h2>
+            <div id="status-indicator" class="status-active">
+                Active
+            </div>
+            <p id="instruction-text">System is monitoring your eyes...</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
