@@ -1,5 +1,2 @@
-streamlit
-streamlit-webrtc
-mediapipe
-scipy
-opencv-python-headless
+cmake
+build-essential
